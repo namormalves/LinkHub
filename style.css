@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    height: 100vh;
+    font-size: 14px;
+}
+
+body {
+    background: linear-gradient(to top, #707070, #3d51ff);
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #eee, #999);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    max-width: 30%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+section.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre os botões */
+}
+
+a.link button {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna (imagem em cima, texto embaixo) */
+    align-items: center; /* Centraliza a imagem e o texto */
+    justify-content: center;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .2s;
+    width: 100%; /* Faz o botão ocupar a largura total da célula */
+    min-height: 120px; /* Define a altura mínima para o botão */
+    max-height: 120px; /* Define a altura máxima para o botão */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4); /* Sombra padrão nos botões */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar a altura máxima */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for cortado */
+}
+
+a.link button span {
+    color: #1f1f1f;
+    font-weight: 600;
+    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
+    overflow: hidden; /* Esconde o texto que ultrapassar o limite de altura */
+    display: -webkit-box; /* Suporte para WebKit browsers */
+    line-clamp: 3; /* Limita o número de linhas do texto */
+    -webkit-box-orient: vertical; /* Necessário para o efeito de line-clamp */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+}
+
+a.link img {
+    width: 70px; /* Mantém a imagem em destaque */
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+a.link button:hover, footer a.btn-footer:hover {
+    transform: scale(1.05);
+    box-shadow: none; /* Remove a sombra no hover */
+}
+
+footer {
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    text-align: center;
+    margin: 20px;
+}
+
+footer a.btn-footer {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+    color: #1f1f1f;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4); /* Sombra padrão nos botões */
+}

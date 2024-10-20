@@ -53,43 +53,43 @@ header h1 {
 
 section.btn-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanho igual */
-    gap: 20px; /* Espaçamento entre os botões */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 a.link button {
     padding: 10px;
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna (imagem em cima, texto embaixo) */
-    align-items: center; /* Centraliza a imagem e o texto */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     border: none;
     border-radius: 2px;
-    font-size: 1.2em;
+    font-size: 1em;
     cursor: pointer;
     transition: .2s;
-    width: 100%; /* Faz o botão ocupar a largura total da célula */
-    min-height: 120px; /* Define a altura mínima para o botão */
-    max-height: 120px; /* Define a altura máxima para o botão */
-    text-align: center; /* Centraliza o texto */
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4); /* Sombra padrão nos botões */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassar a altura máxima */
-    text-overflow: ellipsis; /* Adiciona reticências se o texto for cortado */
+    width: 100%;
+    min-height: 120px;
+    max-height: 120px;
+    text-align: center;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 a.link button span {
     color: #1f1f1f;
     font-weight: 600;
-    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
-    overflow: hidden; /* Esconde o texto que ultrapassar o limite de altura */
-    display: -webkit-box; /* Suporte para WebKit browsers */
-    line-clamp: 3; /* Limita o número de linhas do texto */
-    -webkit-box-orient: vertical; /* Necessário para o efeito de line-clamp */
-    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    margin-top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
 
 a.link img {
-    width: 70px; /* Mantém a imagem em destaque */
+    width: 70px;
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
@@ -97,14 +97,14 @@ a.link img {
 
 a.link button:hover, footer a.btn-footer:hover {
     transform: scale(1.05);
-    box-shadow: none; /* Remove a sombra no hover */
+    box-shadow: none;
 }
 
 footer {
-    display: flex; /* Utiliza flexbox */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 20px;
+    margin: 30px 20px;
 }
 
 footer a.btn-footer {
@@ -117,5 +117,5 @@ footer a.btn-footer {
     margin: 0 10px;
     transition: .2s;
     color: #1f1f1f;
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4); /* Sombra padrão nos botões */
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
 }

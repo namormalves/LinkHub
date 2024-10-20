@@ -36,7 +36,7 @@ a {
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 header img {
@@ -63,14 +63,14 @@ a.link button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: none;
+    border: 1px solid #000;
     border-radius: 2px;
     font-size: 1em;
     cursor: pointer;
     transition: .2s;
     width: 100%;
-    min-height: 120px;
-    max-height: 120px;
+    min-height: 140px;
+    max-height: 140px;
     text-align: center;
     box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
     overflow: hidden;
@@ -86,6 +86,7 @@ a.link button span {
     line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+    width: 100%;
 }
 
 a.link img {

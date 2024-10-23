@@ -103,7 +103,7 @@ a.link img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 a.link button:hover, footer a.btn-footer:hover {
